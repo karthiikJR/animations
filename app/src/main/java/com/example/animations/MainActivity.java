@@ -9,6 +9,9 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     boolean img1 = true;
+    boolean translationV = true;
+
+    ImageView iv1;
 
     public void fade(View view){
         ImageView iv = (ImageView) findViewById(R.id.ivEg1);
@@ -24,12 +27,30 @@ public class MainActivity extends AppCompatActivity {
             img1 = true;
         }
 
+    }
 
+    public void translation(View view){
+
+        ImageView iv = (ImageView) findViewById(R.id.ivEg1);
+
+
+        if(translationV) {
+            iv.animate().translationXBy(1500).setDuration(1000);
+            iv1.animate().translationXBy(1500).setDuration(1000);
+            translationV = false;
+        }else {
+            iv.animate().translationXBy(-1500).setDuration(1000);
+            iv1.animate().translationXBy(-1500).setDuration(1000);
+            translationV = true;
+        }
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        iv1 = (ImageView) findViewById(R.id.ivEg);
+        iv1.setTranslationX(-1500);
     }
 }

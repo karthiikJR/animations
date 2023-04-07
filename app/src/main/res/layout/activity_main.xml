@@ -27,6 +27,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/eg3" />
 
+    <ImageView
+        android:id="@+id/ivEg"
+        android:layout_width="413dp"
+        android:layout_height="615dp"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px"
+        android:alpha="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eg3" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="116dp"
@@ -55,7 +67,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button"
+            android:onClick="translation"
+            android:text="Translation"
             tools:ignore="TextSizeCheck" />
     </LinearLayout>
 
