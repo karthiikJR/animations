@@ -6,13 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/ivEg1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eg1" />
+
+    <ImageView
+        android:id="@+id/ivEg2"
+        android:layout_width="413dp"
+        android:layout_height="615dp"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eg3" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="116dp"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="5px"
+        android:orientation="horizontal"
+        android:paddingHorizontal="5px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_marginBaseline="5px">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:layout_weight="1"
+            android:onClick="fade"
+            android:text="FADE"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
