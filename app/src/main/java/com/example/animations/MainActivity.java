@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             translationV = false;
         }else {
             iv.animate().translationXBy(-1500).setDuration(1000);
-            iv1.animate().translationXBy(-1500).setDuration(2000);
+            iv1.animate().translationXBy(-1500).setDuration(1000);
             translationV = true;
         }
     }
